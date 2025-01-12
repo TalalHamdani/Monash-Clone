@@ -1,0 +1,585 @@
+/* Global styles */
+body {
+    margin: 0;
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+}
+
+/* Top blue bar */
+.top-bar {
+    font-weight: 400;
+    background-color: #006dae;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+/* Navbar sections */
+.top-bar > div {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+}
+
+/* Link styles */
+.top-bar a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 12px;
+    transition: background-color 0.3s ease;
+}
+
+/* Link hover styles */
+.top-bar a:hover {
+    background-color: #0d7dbead;
+    border-radius: 4px;
+}
+
+/* Dropdown styles */
+.campus-selector {
+    background-color: #006dae;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+/* Dropdown hover styles */
+.campus-selector:hover {
+    background-color: #0d7dbead;
+}
+
+.right-options {
+    font-size: 12px;
+    background-color: #006dae;
+    color: white;
+    padding: 10px;
+    padding-left: 0;
+    padding-right: 5px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.right-options:hover {
+    background-color: #0d7dbead;
+}
+
+/* Search Icon Styles */
+.button {
+    border: none;
+    width: 40px;
+    height: 40px;
+    background-color: #006dae;
+    cursor: pointer;
+}
+
+  .button:hover {
+    background-color: #0d7dbead;
+}
+  
+  .button:active {
+    transform: scale(0.97);
+}
+
+/* Icon styles */
+.top-bar i {
+    margin-right: 5px;
+    color: white;
+}
+
+/* Main white navbar */
+.main-navbar {
+    position: sticky;
+    top: 0;
+    font-size: 14px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Logo styles */
+.main-navbar img {
+    height: 40px;
+}
+
+/* Nav styles */
+.main-navbar nav {
+    display: flex;
+    align-items: center;
+}
+
+/* Link styles */
+.main-navbar nav a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Link hover styles */
+.main-navbar nav a:hover {
+    color: #0d7dbead;
+}
+
+/* Apply button styles */
+.apply-button {
+    background-color: white; 
+    border: black solid 1px;
+    color: rgb(0, 0, 0);
+    padding: 15px 40px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    
+}
+
+/* Apply button hover styles */
+.apply-button:hover {
+    color: white;
+    background-color: #0289d4;
+    transition: ease-in-out 0.3s;
+}
+
+/*Choose Monash background*/
+.background-choose {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.monash.edu/__data/assets/image/0009/3817242/varieties/feature.box.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: top;
+    justify-content: left;
+    padding-left: 5%;
+    padding-top: 5%;
+}
+  
+.content-choose {
+    text-align: left;
+    color: #fff;
+}
+  
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-variation-settings:
+    "wdth" 75;
+
+}
+  
+.button {
+    text-decoration: none;
+    color: #fff;
+}
+
+.button:hover {
+    text-decoration: underline;
+}
+
+/* Search bar styles */
+.search-wrapper {
+    max-width: 100%;
+    margin: 15%;;
+}
+
+.search-box {
+    position: relative;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    width: 500px;
+}
+
+.search-box:focus-within {
+    box-shadow: 0 3px 20px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+
+.search-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d;
+    z-index: 10;
+}
+
+.search-button {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50px;
+    padding: 8px 20px;
+    transition: all 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #0b5ed7;
+    transform: translateY(-50%) scale(1.05);
+}
+
+.container-change {
+    background-color: white;
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* White Overlapping Section */
+.white-overlap {
+    background-color: #fff;
+    position: relative;
+    margin-top: -100px;
+    width: 80%;
+    padding: 50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.white-overlap h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.white-overlap p {
+    font-size: 24px;
+    font-weight: 350;
+    margin-bottom: 30px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* padding: 20px; */
+    margin-bottom: 20px;
+    box-shadow: #8f8f8f 1px 1px 3px;
+    text-align: left;
+}
+
+.card:hover {
+    box-shadow: #6e6e6e 3px 3px 6px;
+    transition: ease-in-out 0.3s;
+}
+
+.card h3 {
+    font-size: 24px;
+    color: #006dae;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 18px;
+    color: #333;
+}
+
+.card-icon {
+    padding: 20px 20px;
+    font-size: 48px;
+    color: #006dae;
+    margin-left: 10px;
+}
+
+.card-body {
+    padding: 20px 20px;
+}
+
+.card-video {
+margin-left: 20px;
+}
+
+.card-img {
+    display: block;
+    max-width: 90%;
+    height: auto;
+}
+
+.promo-btn {
+    font-weight: 400;
+    background-color: #006dae;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.background-rankings {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://www.monash.edu/__data/assets/image/0007/3096970/varieties/feature.box.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.content-rankings {
+    padding: 50px;
+    color: white;
+    text-align: center;
+}
+
+.content-rankings h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.content-rankings p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.ranking-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 80px;
+}
+
+.r-card {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    height: 300px;
+    width: 250px;
+}
+
+.r-card h3{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.r-card p {
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 1.25;
+}
+
+.r-icon {
+    font-weight: bold;
+    font-size: 64px;
+}
+
+/*Impact section*/
+.impact {
+    background-color: #fff;
+    position: relative;
+    width: 80%;
+    padding: 50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.promo-tag {
+    background-color: #f6f6f6;
+    color: #505050;
+    display: inline-block;
+    padding: 5px 10px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 70px;
+    left: 50px;
+}   
+
+/* Monash Explore Section */
+.video-bg h2 {
+    font-size: 36px;
+    color: white;
+}
+
+.video-bg p {
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+} 
+
+.video-overlay {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white;
+    padding: 20px;
+    max-width: 80%; /* Limit overlay width */
+}
+
+/* News Section */
+.news {
+    background-color: #fff;
+    position: relative;
+    width: 80%;
+    padding: 50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.news-grid {
+    background-color: #fff;
+    position: relative;
+    width: 80%;
+    padding: 50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* FOoter styles */
+footer {
+  background-color: #323232;
+  color: #fff;
+}
+
+.footer-top {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #444;
+}
+
+.footer-top p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.footer-top a {
+  color: #00aaff;
+  text-decoration: none;
+}
+
+.footer-top a:hover {
+  text-decoration: underline;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 150px;
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin: 8px 0;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #444;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.footer-info div {
+  flex: 1;
+  min-width: 150px;
+  text-align: center;
+}
+
+.footer-info h5 {
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.footer-info p {
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.footer-info a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-info a:hover {
+  text-decoration: underline;
+}
+
+.footer-credits {
+  margin-top: 10px;
+}
+
+.footer-credits p {
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.footer-credits a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-credits a:hover {
+  text-decoration: underline;
+}
+
+.footer-logo img {
+    align-items: left;
+  max-width: 100px;
+  margin: 0 0;
+}
